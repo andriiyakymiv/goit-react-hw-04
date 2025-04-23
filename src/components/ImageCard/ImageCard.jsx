@@ -6,17 +6,11 @@ const ImageCard = ({ picture, openModal }) => {
   return (
     <li>
       <div className={style.imageWrapper}>
-        <img
-          onClick={() => {
-            openModal({
-              src: picture.urls.regular,
-              alt: picture.alt_description,
-            });
-          }}
+        <img onClick={() => {openModal({src: picture.urls.regular,alt: picture.alt_description,})}}
           src={picture.urls.small}
           alt={picture.alt_description}
         />
-        <Description picture={picture} />
+        {/* <Description picture={picture} /> */}
       </div>
     </li>
   );
