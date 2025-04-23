@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import { getPhotos } from "./services/unsplashApi";
 import SearchBar from "./components/SearchBar/SearchBar";
+import ImageGallery from "./components/ImageGallery/ImageGallery";
 
 
 function App() {
@@ -66,9 +67,9 @@ function App() {
     <>
       <SearchBar onSubmit={handleSubmit} />
 
-      {/* {pictures.length > 0 && (
+      {pictures.length > 0 && (
         <ImageGallery openModal={openModal} pictures={pictures} />
-      )} */}
+      )}
 
       {/* {error && <ErrorMessage message={error} />} */}
 
